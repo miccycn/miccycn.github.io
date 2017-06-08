@@ -22,6 +22,10 @@
       "src": "https://h5.sinaimg.cn/upload/2016/05/13/72/Sina_Weibo_Logo_RGB_Cn.png",
       "sizes": "256x256",
       "type": "image/png"
+    }, {
+      "src": "https://h5.sinaimg.cn/upload/2015/12/11/10/weibo_health_WeightDetail_yunmai_color.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }],
   "start_url": "/index.html",
   "display": "standalone",
