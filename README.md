@@ -2,7 +2,6 @@
 
 ## Manifest.json(Nexus 6P 为例)
 - 开机画面上的 logo 大小为 448*448 / 2560*1440，会在 icons 里面取，需要满足两个条件：sizes和图片实际尺寸都大于等于192x192，优先取 sizes 最大的；
-- APP icon 优先取 size 为 192x192 的，若没有则网上找；
+- APP icon 优先取 size 为 192x192 的，若没有则向上找；
 - "background_color"定义的是开机画面的背景色；
 - "theme_color"定义的是 app “外壳”的颜色，比如“最近任务界面”里的tab颜色；
-- "display"是
