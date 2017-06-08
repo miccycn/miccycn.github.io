@@ -19,13 +19,13 @@
       "sizes": "192x192",
       "type": "image/png"
     }, {
-      "src": "images/icons/icon-256x256.png",
+      "src": "https://h5.sinaimg.cn/upload/2016/05/13/72/Sina_Weibo_Logo_RGB_Cn.png",
       "sizes": "256x256",
       "type": "image/png"
     }],
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#FF0000",
+  "background_color": "#FFF",
   "theme_color": "#f6d855"
 }
