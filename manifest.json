@@ -4,7 +4,7 @@
   "description": "随时随地分享新鲜事",
   "icons": [{
       "src": "https://h5.sinaimg.cn/upload/2017/03/16/16/icon.png",
-      "sizes": "144x144",
+      "sizes": "168x168",
       "type": "image/png"
     }, {
         "src": "https://h5.sinaimg.cn/upload/2015/09/29/74/weibofit_badge_snail.png",
