@@ -6,7 +6,11 @@
       "src": "https://h5.sinaimg.cn/upload/2015/09/29/74/weibofit_badge_snail.png",
       "sizes": "128x128",
       "type": "image/png"
-    },{
+    }, {
+        "src": "https://h5.sinaimg.cn/upload/2015/09/29/74/weibofit_badge_snail.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }, {
       "src": "https://h5.sinaimg.cn/upload/2015/09/10/6/weibo_for_6s.jpg",
       "sizes": "512x512",
       "type": "image/png"
