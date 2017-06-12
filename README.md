@@ -9,3 +9,4 @@
 - short_name：主屏幕APP名称，状态栏名称；
 - name：“添加到主屏幕”的横幅上显示的名称，启动画面的上显示的名称；
 - 启动画面里的 icon 与文字的距离与 icon 图片的原始尺寸有关（和 sizes 字段无关），原始尺寸越大距离越大；
+- display的可选项：fullscreen、standalone、minimal-ui、browser
