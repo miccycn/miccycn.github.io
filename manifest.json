@@ -12,7 +12,7 @@
       "type": "image/png"
     }],
   "start_url": "/",
-  "display": "standalone",
+  "display": "minimal-ui",
   "orientation": "any",
   "background_color": "#F3F3F3",
   "theme_color": "#F3F3F3"
