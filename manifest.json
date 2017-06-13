@@ -3,11 +3,7 @@
   "short_name": "微博",
   "description": "随时随地分享新鲜事",
   "icons": [{
-      "src": "https://h5.sinaimg.cn/upload/2017/03/16/16/icon.png",
-      "sizes": "168x168",
-      "type": "image/png"
-    }, {
-      "src": "http://triangleparkcreative.com/sites/default/files/styles/large/public/1-MidwestKidney_Identity.png",
+      "src": "https://h5.sinaimg.cn/upload/2017/06/13/696/273.png",
       "sizes": "192x192",
       "type": "image/png"
     }],
@@ -17,6 +13,3 @@
   "background_color": "#F3F3F3",
   "theme_color": "#F3F3F3"
 }
-
-
-http://s2.d2scdn.com/photos/2014/03/31/ZxouVrQ2mxqKLyuV3d7D6L.png
