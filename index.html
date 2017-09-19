@@ -36,7 +36,8 @@
   </body>
   <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
   <script>
-  const app = new Vue({
+  new Vue({
+    el: '#app',
     mounted() {
       const ele = document.getElementById('text');
       ele.addEventListener('focus', function() {
@@ -44,6 +45,6 @@
         this.style.height = '1000px';
       });
     }
-  }).$mount('#app');
+  });
   </script>
 </html>
