@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .hello{
+        position: fixed;
+        top:0;
+        bottom:0;
+        -webkit-overflow-scrolling:touch;
+        overflow: auto;
+      }
+      #text{
+        height: 10px;
+      }
+      .foo{
+        position:absolute;
+        z-index:-9999;
+        visibility:hidden;
+      }
+      textarea{
+        background-color:#F00;
+      }
+      .color {
+        background-color:#0F0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="hello">
+        <textarea id="text" class="color"></textarea>
+        <textarea class="foo"></textarea>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+  <script>
+  new Vue({
+    el: '#app',
+    mounted() {
+      const ele = document.getElementById('text');
+      ele.addEventListener('focus', function() {
+        this.classList.remove('color');
+        this.style.height = '1000px';
+      });
+    }
+  });
+  </script>
+</html>
