@@ -21,12 +21,15 @@
       textarea{
         background-color:#F00;
       }
+      .color {
+        background-color:#0F0;
+      }
     </style>
   </head>
   <body>
     <div id="app">
       <div class="hello">
-        <textarea id="text"></textarea>
+        <textarea id="text" class="color"></textarea>
         <textarea class="foo"></textarea>
       </div>
     </div>
@@ -37,6 +40,7 @@
     mounted() {
       const ele = document.getElementById('text');
       ele.addEventListener('focus', function() {
+        this.classList.remove('color');
         this.style.height = '1000px';
       });
     }
