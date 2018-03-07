@@ -1,6 +1,5 @@
-# 就随性记一下 PWA 的笔记……
-
 [TOC]
+# 就随性记一下 PWA 的笔记……
 ## 移动web的痛点（开发体验好）
 
 * 严重依赖网络环境
@@ -337,8 +336,10 @@ const cacheList = [
 * 在 fetch 事件里操作缓存，install 与 activate 事件里不做关于缓存的操作
 * 稳定的模块指定 WebpackChunkName，使用文件名中的 MD5 比较
 * 基础 bundles （例如 vendor.js、manifest.js 等）在 ```<head>``` 中加 preload
-```<link rel="preload" href="//h5.sinaimg.cn/m/weibo-lite/js/vendor.337a6d7a.js" as="script">
-  <link rel="preload" href="//h5.sinaimg.cn/m/weibo-lite/css/app.9a344f76.css" as="style">```
+```
+<link rel="preload" href="//h5.sinaimg.cn/m/weibo-lite/js/vendor.337a6d7a.js" as="script">
+<link rel="preload" href="//h5.sinaimg.cn/m/weibo-lite/css/app.9a344f76.css" as="style">
+```
 * 使用响应头中的 last-modified 或 e-tag 作比对（服务端需开启CORS，即响应头中有 Access-Control-Allow-Origin）
 
 在 install 与 activate 事件里不做关于缓存的操作，每次在 Fetch 事件里做更新判断，这里的 SW.js 无法明确知道哪些包需要预缓存，所以对于第一次访问的用户来说没有预加载 prefetch 的作用。只有用户需要到这个 bundle 时，会判断更新删除旧版本缓存新版本，所以如果用户时间不访问某个模块也会存在有的 bundle 一直不更新的情况，但是不会影响访问，因为增量更新，文件名中的MD5会改变，所以旧版本永远不会与新版本冲突。
